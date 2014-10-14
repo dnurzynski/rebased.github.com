@@ -3,7 +3,7 @@
 <head>
   <title>Rebased.pl - bullshit-free programmers</title>
   <meta charset='utf-8' />
-  <meta name="viewport" content="user-scalable=0" />
+  <meta name="viewport" content="width=device-width, user-scalable=0" />
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -15,16 +15,8 @@
     <nav class="right">
       <div class='mobile-menu'>
         <div class="menu-controls">
-          <div class="menu-title">Menu</div>
           <div class="menu-button"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div>
         </div>
-        <ul class='mobile-menu-links'>
-          <li ><a href="#team">Team</a><div></div></li>
-          <li ><a href="#projects">Projects</a><div></div></li>
-          <li ><a href="#open-source">Open Source</a><div></div></li>
-          <li ><a href="#community">Community</a><div></div></li>
-          <li ><a href="#contact">Contact</a><div></div></li>
-        </ul>
       </div>
       <ul class='main-menu'>
         <li class="left"><a href="#team">Team</a><div></div></li>
@@ -34,6 +26,13 @@
         <li class="left"><a href="#contact">Contact</a><div></div></li>
       </ul>
     </nav>
+    <ul class='mobile-menu-links'>
+      <li ><a href="#team">Team</a><div></div></li>
+      <li ><a href="#projects">Projects</a><div></div></li>
+      <li ><a href="#open-source">Open Source</a><div></div></li>
+      <li ><a href="#community">Community</a><div></div></li>
+      <li ><a href="#contact">Contact</a><div></div></li>
+    </ul>
   </div>
 </header>
 <main>
@@ -444,16 +443,6 @@
                 <img src="images/team/sarniak.jpg" alt="" />
                 <a href="https://github.com/travis-ci/travis-web/commits/master?author=lukesarnacki"><img src="images/github.png" alt="" /></a>
               </li>
-              <!--
-              <li class="team">
-                <img src="images/team/meal.jpg" alt="" />
-                <a href=""><img src="images/github.png" alt="" /></a>
-              </li>
-              <li class="team">
-                <img src="images/team/pawel.jpg" alt="" />
-                <a href=""><img src="images/github.png" alt="" /></a>
-              </li>
-            -->
             </ul>
           </div class="open-source-project">
         </div>
@@ -550,7 +539,7 @@
           <img src="images/open-source/spree.png" alt="" />
           <div class="open-source-project">
             <header>
-              Spree
+              <span>Spree Commerce</span>
             </header>
             <p>
               The e-commerce Rails engine we all love to work with (and contribute to).
@@ -662,7 +651,7 @@
     </figure>
     <div class='map-lower'>
       <a href="http://bit.ly/1ybpsoL" target='_blank'>
-        <img src="images/contact/map.png" alt="" />
+        <img src="images/contact/map.png" alt="" class='map-image'/>
       </a>
     </div>
   </section>

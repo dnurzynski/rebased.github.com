@@ -1,6 +1,6 @@
 #projects ul {
   padding-top: 36px;
-  width: 1052px;
+  width: 870px;
   margin: auto;
 }
 
@@ -40,7 +40,7 @@
 #projects figure > img {
   width: 240px;
   height: 190px;
-  margin: 20px 25px;
+  margin: 20px auto;
   padding-top: 20px;
 }
 

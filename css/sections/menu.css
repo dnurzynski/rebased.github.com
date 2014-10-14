@@ -10,13 +10,13 @@ body > header {
   position: fixed;
   top: 0px;
   width: 100%;
-  min-width: 660px;
   height: 0px;
   padding: 0;
   transition: height .3s, linear;
   -webkit-transition: height .3s, linear;
   -moz-transition: height .3s, ease-in;
   -o-transition: height .3s, ease-in;
+
 }
 
 header{
@@ -64,18 +64,40 @@ nav ul li a:hover:after {
 }
 
 .mobile-menu-links{
+  width: 180px;
+  position: fixed;
+  right: -180px;
+  top: 65px;
+  font-size: 23px;
   height: 0px;
-  transition: height 1s, linear;
-  -webkit-transition: height 1s, linear;
-  -moz-transition: height 1s, ease-in;
-  -o-transition: height 1s, ease-in;
+  transition: right .5s, linear;
+  -webkit-transition: right .5s, linear;
+  -moz-transition: right .5s, ease-in;
+  -o-transition: right .5s, ease-in;
+  -webkit-transition-property: right;
+  -webkit-transition-duration: .5s;
+  -webkit-timing-function: linear;
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+
+  transform: translate3d(0,0,0);
+}
+
+ul.mobile-menu-links.open {
+  -webkit-transform: translate3d(-180px,0,0);
+  -moz-transform: translate3d(-180px,0,0);
+  -o-transform: translate3d(-180px,0,0);
+
+  transform: translate3d(-180px,0,0);
 }
 
 .mobile-menu{
   background-color: #555555;
   border-radius: 6px 6px 6px 6px;
   min-height: 36px;
-  width: 300px;
+  width: 93px;
   margin: 0 auto !important;
   overflow: hidden;
   position: relative;
@@ -112,7 +134,7 @@ nav ul li a:hover:after {
 .menu-button{
   display: block;
   position: absolute;
-  right: 15px;
+  right: 6px;
   top: 6px;
   padding:0px 7px 4px 7px;
   border:1px solid #3e587b;

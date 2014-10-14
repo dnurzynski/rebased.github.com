@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @media(max-width: 1029px) {
   body{
     background: url('../images/site-background.png') no-repeat center -485px;
@@ -93,16 +100,29 @@
 
   /*projects*/
 
+  #projects figure > img{
+    width: 140px;
+    height: 131px;
+  }
+
   #projects ul {
-    width: 702px;
+    width: 580px;
   }
 
   #projects li {
     border: none;
+    width: 290px;
+
+    height: 360px;
   }
 
   #projects li:nth-of-type(3n-1) {
     border-width: 0;
+  }
+
+  #projects figure > img {
+    width: 220px;
+    height: 194px;
   }
 
   #projects li:nth-of-type(-n+3) {
@@ -191,26 +211,27 @@
   }
 
    body > header, header.visible {
-    height: 130px;
+    height: 65px;
   }
 
   .header-main > h1 {
-    left: 70px;
-    top: 48px;
+    left: 27px;
+    top: 17 px;
   }
 
   .mobile-menu {
-    top: 5px;
+    top: -20px;
+    width: 65px;
   }
 
   .menu-button {
-    height: 55px;
+    height: 43px;
     background-image: url("../../images/sapphire-menu-bg2.png");
   }
 
   .menu-button span {
-    margin-top: 10px;
-    width: 65px;
+    margin-top: 5px;
+    width: 37px;
     height: 7px;
   }
 
@@ -218,9 +239,14 @@
     font-size: 32px;
   }
 
+  nav.right{
+    width: auto;
+    padding-right: 10px;
+  }
+
   .menu-controls {
     background-image: url("../../images/sapphire-menu-bg2.png");
-    height: 71px;
+    height: 55px;
   }
 
   .menu-title {
@@ -229,30 +255,240 @@
   }
 }
 
-@media(max-width: 760px){
+@media(max-width: 767px){
+  #team > section, section#team, section {
+    min-width: 310px;
+    max-width: 310px;
+    margin: auto;
+  }
 
+  #team > section{
+    height: 725px;
+  }
+
+  #team section > footer {
+    top: -2785px;
+  }
+
+  .twitter{
+    background: url('../images/twitter.png') no-repeat center center;
+    background-size: 51px;
+    margin: 5px;
+  }
+
+  #team section.extend-section{
+    height: 3500px;
+  }
+
+  #intro section p{
+    font-size: 18px;
+    padding: 0 0px;
+  }
+
+  #header{
+    font-size: 34px;
+    margin: 0 0 34px 0;
+  }
+
+  #subheader {
+    font-size: 30px
+  }
+
+  #team figure figcaption{
+    position: relative;
+    overflow: visible;
+    width: 200px;
+  }
+
+  #team li, #team figure{
+    width: 400px;
+  }
+
+  #team li{
+    margin: 15px auto;
+    height: 200px;
+  }
+
+  #team figure:hover header{
+    margin-top: 0px;
+  }
+
+  #team figcaption > p {
+    width: 160px;
+    padding: 0 20px 0 0px;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  #team figure figcaption header{
+    margin: 0px;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  #team figure figcaption header p{
+    font-size: 10px;
+  }
+
+  #team figure figcaption footer{
+    position: relative;
+    left: -180px;
+    top: -50px;
+    margin: 0px;
+  }
+
+  #team figure figcaption{
+    top: 0px;
+  }
+
+  #team figure > img{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    float: left;
+  }
+
+  #projects figure > img {
+    width: 100px;
+    height: 99px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  #projects ul{
+    width: 320px;
+  }
+
+  #projects li{
+    width: 160px;
+    padding: 0px;
+    height: 290px;
+  }
+
+  #projects figure > figcaption {
+    padding: 5px;
+  }
 
   .open-source-project {
     padding-left: 10px;
   }
 
+  #open-source div > img {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 90px;
+  }
+
   #open-source div > .open-source-project {
-    max-width: 400px;
+    max-width: 310px;
   }
 
   section#open-source > ul > li {
-    max-width: 550px;
-    min-width: 550px;
+    max-width: 310px;
+    min-width: 310px;
     margin: auto;
+    padding-bottom: 20px;
+  }
+
+  #open-source .open-source-project > header, #open-source .open-source-project > p {
+    text-align: center;
+  }
+
+  #open-source div li > a:hover {
+    opacity: 0;
+  }
+
+
+  #open-source .open-source-project > ul {
+    display: table;
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+    left: -10px;
+  }
+
+  section#open-source .open-source-project > ul > li.team {
+    height: 95px;
+    margin: 0 2px;
+  }
+
+  #open-source .open-source-project li > img{
+    width: 90px;
+  }
+
+  section#community > header {
+    font-size: 42px;
   }
 
   #community .community-project {
-    max-width: 60%;
+    max-width: 100%;
+    text-align: center;
   }
 
   #community li {
     max-width: 550px;
     margin: auto;
+  }
+
+  #community img{
+    display: block;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  section#contact > figure {
+    width: 310px;
+  }
+
+  #contact figcaption > div {
+    width: 310px;
+    padding: 0 10px;
+  }
+
+  #contact figcaption > div > section:first-of-type, #contact figcaption > div >section:last-of-type {
+    width: 230px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #contact figcaption > div > section:first-of-type{
+    margin-bottom: 40px;
+  }
+
+  section#contact > figure figcaption section > header {
+    font-size: 26px;
+  }
+
+  #contact figcaption address{
+    font-size: 18px;
+  }
+
+  #contact #title{
+    font-size: 20px;
+  }
+
+  #contact figcaption section:last-of-type > header{
+    margin-bottom: 20px;
+  }
+
+  .map-image{
+    width: 310px;
+  }
+
+  section#contact > .map-lower {
+    width: 310px;
+  }
+
+  body > footer {
+    font-size: 14px;
   }
 
 }
