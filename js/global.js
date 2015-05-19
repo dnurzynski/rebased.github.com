@@ -58,7 +58,7 @@ $('document').ready(function() {
     if (position >= sectionOne && position < sectionOneExit) {
       currentActive.removeClass('active-section');
       $('a[href="#section_1"]').next().addClass('active-section');
-    } else if (position >= sectionTwo && position < sectionProjectsExit) {
+    } else if (position >= sectionTwo && position < sectionTwoExit) {
       currentActive.removeClass('active-section');
       $('a[href="#section_2"]').next().addClass('active-section');
     } else if (position >= sectionThree && position < sectionFourSourceExit) {
