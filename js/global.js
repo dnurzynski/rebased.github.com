@@ -45,31 +45,31 @@ $('document').ready(function() {
     var currentActive = $('.active-section') || $('nav');
     var position = window.pageYOffset;
 
-    var sectionTeamEnter = $('#team').position().top;
-    var sectionProjectsEnter = $('#projects').position().top;
-    var sectionOpenSourceEnter = $('#open-source').position().top;
-    var sectionCommunityEnter = $('#community').position().top;
-    var sectionContactEnter = $('#contact').position().top;
-    var sectionTeamExit = sectionProjectsEnter;
-    var sectionProjectsExit = sectionOpenSourceEnter;
-    var sectionOpenSourceExit = sectionCommunityEnter;
-    var sectionCommunityExit = sectionContactEnter;
+    var sectionOne = $('#section_1').position().top;
+    var sectionTwo = $('#section_2').position().top;
+    var sectionThree = $('#section_3').position().top;
+    var sectionFour = $('#section_4').position().top;
+    var sectionFive = $('#section_5').position().top;
+    var sectionOneExit = sectionTwo;
+    var sectionTwoExit = sectionThree;
+    var sectionFourSourceExit = sectionFour;
+    var sectionFiveExit = sectionFive;
 
-    if (position >= sectionTeamEnter && position < sectionTeamExit) {
+    if (position >= sectionOne && position < sectionOneExit) {
       currentActive.removeClass('active-section');
-      $('a[href="#team"]').next().addClass('active-section');
-    } else if (position >= sectionProjectsEnter && position < sectionProjectsExit) {
+      $('a[href="#section_1"]').next().addClass('active-section');
+    } else if (position >= sectionTwo && position < sectionProjectsExit) {
       currentActive.removeClass('active-section');
-      $('a[href="#projects"]').next().addClass('active-section');
-    } else if (position >= sectionOpenSourceEnter && position < sectionOpenSourceExit) {
+      $('a[href="#section_2"]').next().addClass('active-section');
+    } else if (position >= sectionThree && position < sectionFourSourceExit) {
       currentActive.removeClass('active-section');
-      $('a[href="#open-source"]').next().addClass('active-section');
-    } else if (position >= sectionCommunityEnter && position < sectionCommunityExit) {
+      $('a[href="#section_3"]').next().addClass('active-section');
+    } else if (position >= sectionFour && position < sectionFiveExit) {
       currentActive.removeClass('active-section');
-      $('a[href="#community"]').next().addClass('active-section');
-    } else if (position >= sectionContactEnter) {
+      $('a[href="#section_4"]').next().addClass('active-section');
+    } else if (position >= sectionFive) {
       currentActive.removeClass('active-section');
-      $('a[href="#contact"]').next().addClass('active-section');
+      $('a[href="#section_5"]').next().addClass('active-section');
     };
   }
 
@@ -93,9 +93,6 @@ $('document').ready(function() {
       toggleMenu();
     }
   });
-
-  $("#team").on("click", ".toggle-button", hideOrShowTeam);
-  $("#team").on("click", ".divider-button", hideOrShowTeam);
   $(window).on('scroll', scrollSite);
   $(window).on('scroll', scrollSpy);
 });

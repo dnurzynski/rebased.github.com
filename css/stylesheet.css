@@ -79,7 +79,7 @@ main > section > header:after {
   bottom: -14px;
 }
 
-#intro,#section_2,#section_3,#community,#contact {
+#intro,#section_2,#section_3,#section_4,#section_5 {
   margin-bottom: 60px;
 }
 
@@ -663,23 +663,23 @@ section#section_3 .list-item > ul > li.inline-photo {
   margin-bottom: 35px;
 }
 
-#community li {
+#section_4 li {
   padding-bottom: 32px;
 }
 
-#community img {
+#section_4 img {
   padding-left: 10px;
   padding-right: 70px;
   display: inline-block;
   vertical-align: top;
 }
 
-#community .community-project {
+#section_4 .section-4-item {
   max-width: 80%;
   display: inline-block;
 }
 
-#community .community-project > header {
+#section_4 .section-4-item > header {
   margin-bottom: 12px;
   margin-top: -2px;
   font-size: 30px;
@@ -688,21 +688,21 @@ section#section_3 .list-item > ul > li.inline-photo {
   line-height: 90%;
 }
 
-#community .community-project > p {
+#section_4 .section-4-item > p {
   font-size: 14px;
   line-height: 160%;
   font-weight: 100;
 }
 
-section#community > header {
+section#section_4 > header {
   margin-bottom: 50px;
 }
 
-section#community > ul {
+section#section_4 > ul {
   padding-top: 20px;
 }
 
-section#contact {
+section#section_5 {
   max-width: 1052px;
   width: 100%;
   min-width: 0;
@@ -713,69 +713,69 @@ section.contact-address {
   min-width: 0;
 }
 
-section#contact > .map {
+section#section_5 > .map {
   display: inline-block;
 }
 
-section#contact > .map-lower {
+section#section_5 > .map-lower {
   display: none;
   width: 515px;
   margin: auto;
 }
 
-section#contact > figure {
+section#section_5 > figure {
   padding-top: 30px;
   width: 515px;
   display: inline-block;
   margin: auto;
 }
 
-#contact figcaption > div {
+#section_5 figcaption > div {
   padding-left: 70px;
   width: 425px;
   margin: auto;
 }
 
-#contact figure img {
+#section_5 figure img {
   position: relative;
   padding-bottom: 100px;
   display: block;
   margin: auto;
 }
 
-#contact figcaption > div > section:first-of-type,#contact figcaption > div >section:last-of-type {
+#section_5 figcaption > div > section:first-of-type,#section_5 figcaption > div >section:last-of-type {
   width: 200px;
   display: inline-block;
 }
 
-#contact figcaption > section:first-of-type {
+#section_5 figcaption > section:first-of-type {
   left: 640px;
 }
 
-#contact figcaption > div > section:last-of-type {
+#section_5 figcaption > div > section:last-of-type {
   padding-left: 20px;
 }
 
-#title,#contact figcaption address {
+#title,#section_5 figcaption address {
   font-size: 16px;
   line-height: 160%;
 }
 
-#title,#contact figcaption header,#title {
+#title,#section_5 figcaption header,#title {
   letter-spacing: -1px;
 }
 
-#contact figcaption section:first-of-type > header {
+#section_5 figcaption section:first-of-type > header {
   margin-bottom: 24px;
   margin-top: -3px;
 }
 
-#contact figcaption section:last-of-type > header {
+#section_5 figcaption section:last-of-type > header {
   margin-bottom: 58px;
   margin-top: -3px;
 }
 
-#contact figcaption section:first-of-type > address {
+#section_5 figcaption section:first-of-type > address {
   margin-top: 12px;
 }
 
@@ -785,13 +785,13 @@ section#contact > figure {
   margin-top: -3px;
 }
 
-#contact figcaption address {
+#section_5 figcaption address {
   margin-bottom: 16px;
   font-style: normal;
   font-weight: 100;
 }
 
-section#contact > figure figcaption section > header {
+section#section_5 > figure figcaption section > header {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
@@ -808,11 +808,11 @@ section#contact > figure figcaption section > header {
   display: none;
 }
 
-#section_2 figure,section#contact figcaption {
+#section_2 figure,section#section_5 figcaption {
   position: relative;
 }
 
-section#section_3 > ul,#community > ul {
+section#section_3 > ul,#section_4 > ul {
   max-width: 1052px;
   width: 100%;
   margin: auto;
@@ -944,30 +944,30 @@ section#section_3 > ul,#community > ul {
     clear: both;
   }
 
-  #community .community-project {
+  #section_4 .section-4-item {
     max-width: 70%;
     margin: auto;
   }
 
-  #community li {
+  #section_4 li {
     max-width: 880px;
     margin: auto;
   }
 
-  section#contact > .map {
+  section#section_5 > .map {
     display: none;
   }
 
-  section#contact > .map-lower {
+  section#section_5 > .map-lower {
     display: block;
   }
 
-  section#contact > figure {
+  section#section_5 > figure {
     display: block;
     margin-bottom: 30px;
   }
 
-  #contact figure img {
+  #section_5 figure img {
     padding-bottom: 50px;
   }
 
@@ -1048,11 +1048,11 @@ section#section_3 > ul,#community > ul {
     margin: auto;
   }
 
-  #community .community-project {
+  #section_4 .section-4-item {
     max-width: 60%;
   }
 
-  #community li {
+  #section_4 li {
     max-width: 550px;
     margin: auto;
   }
