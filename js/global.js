@@ -45,22 +45,22 @@ $('document').ready(function() {
     var currentActive = $('.active-section') || $('nav');
     var position = window.pageYOffset;
 
-    var sectionTeamEnter = $('#team').position().top;
-    var sectionProjectsEnter = $('#projects').position().top;
+    var sectionOne = $('#section_1').position().top;
+    var sectionTwo = $('#section_2').position().top;
     var sectionOpenSourceEnter = $('#open-source').position().top;
     var sectionCommunityEnter = $('#community').position().top;
     var sectionContactEnter = $('#contact').position().top;
-    var sectionTeamExit = sectionProjectsEnter;
+    var sectionTeamExit = sectionTwo;
     var sectionProjectsExit = sectionOpenSourceEnter;
     var sectionOpenSourceExit = sectionCommunityEnter;
     var sectionCommunityExit = sectionContactEnter;
 
-    if (position >= sectionTeamEnter && position < sectionTeamExit) {
+    if (position >= sectionOne && position < sectionTeamExit) {
       currentActive.removeClass('active-section');
-      $('a[href="#team"]').next().addClass('active-section');
-    } else if (position >= sectionProjectsEnter && position < sectionProjectsExit) {
+      $('a[href="#section_1"]').next().addClass('active-section');
+    } else if (position >= sectionTwo && position < sectionProjectsExit) {
       currentActive.removeClass('active-section');
-      $('a[href="#projects"]').next().addClass('active-section');
+      $('a[href="#section_2"]').next().addClass('active-section');
     } else if (position >= sectionOpenSourceEnter && position < sectionOpenSourceExit) {
       currentActive.removeClass('active-section');
       $('a[href="#open-source"]').next().addClass('active-section');
@@ -94,8 +94,6 @@ $('document').ready(function() {
     }
   });
 
-  $("#team").on("click", ".toggle-button", hideOrShowTeam);
-  $("#team").on("click", ".divider-button", hideOrShowTeam);
   $(window).on('scroll', scrollSite);
   $(window).on('scroll', scrollSpy);
 });
