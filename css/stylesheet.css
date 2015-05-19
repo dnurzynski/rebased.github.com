@@ -79,7 +79,7 @@ main > section > header:after {
   bottom: -14px;
 }
 
-#intro,#projects,#open-source,#community,#contact {
+#intro,#section_2,#open-source,#community,#contact {
   margin-bottom: 60px;
 }
 
@@ -532,13 +532,13 @@ div.extend-divider-button-background a.divider-button img {
   background: url(../images/github.png) no-repeat;
 }
 
-#projects ul {
+#section_2 ul {
   padding-top: 36px;
   width: 1052px;
   margin: auto;
 }
 
-#projects li {
+#section_2 li {
   float: left;
   width: 290px;
   height: 340px;
@@ -549,32 +549,32 @@ div.extend-divider-button-background a.divider-button img {
   padding: 0 29px;
 }
 
-#projects li:nth-of-type(3n-1) {
+#section_2 li:nth-of-type(3n-1) {
   border-right-width: 1px;
   border-left-width: 1px;
   border-color: #d6d6d6;
   border-style: solid;
 }
 
-#projects li:nth-of-type(-n+3) {
+#section_2 li:nth-of-type(-n+3) {
   border-bottom-width: 1px;
   border-color: #d6d6d6;
   border-style: solid;
 }
 
-#projects figure > figcaption {
+#section_2 figure > figcaption {
   position: absolute;
   text-align: center;
 }
 
-#projects figure > img {
+#section_2 figure > img {
   width: 240px;
   height: 190px;
   padding-top: 20px;
   margin: 20px 25px;
 }
 
-section#projects {
+section#section_2 {
   overflow: hidden;
 }
 
@@ -796,7 +796,7 @@ section#contact > figure figcaption section > header {
   font-size: 20px;
 }
 
-.text-center,#projects section > figure {
+.text-center,#section_2 section > figure {
   text-align: center;
 }
 
@@ -808,7 +808,7 @@ section#contact > figure figcaption section > header {
   display: none;
 }
 
-#projects figure,section#contact figcaption {
+#section_2 figure,section#contact figcaption {
   position: relative;
 }
 
@@ -910,20 +910,20 @@ section#open-source > ul,#community > ul {
     top: -20px;
   }
 
-  #projects ul {
+  #section_2 ul {
     width: 702px;
   }
 
-  #projects li:nth-of-type(3n-1) {
+  #section_2 li:nth-of-type(3n-1) {
     border-width: 0;
   }
 
-  #projects li:nth-of-type(odd) {
+  #section_2 li:nth-of-type(odd) {
     border-right: solid 1px #d6d6d6;
     border-color: #d6d6d6;
   }
 
-  #projects li:nth-of-type(3),#projects li:nth-of-type(4) {
+  #section_2 li:nth-of-type(3),#section_2 li:nth-of-type(4) {
     border-top: solid 1px #d6d6d6;
     border-bottom: solid 1px #d6d6d6;
   }
@@ -971,7 +971,7 @@ section#open-source > ul,#community > ul {
     padding-bottom: 50px;
   }
 
-  #projects li,#projects li:nth-of-type(-n+3) {
+  #section_2 li,#section_2 li:nth-of-type(-n+3) {
     border: none;
   }
 }
