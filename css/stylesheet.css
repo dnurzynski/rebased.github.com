@@ -79,7 +79,7 @@ main > section > header:after {
   bottom: -14px;
 }
 
-#intro,#section_2,#open-source,#community,#contact {
+#intro,#section_2,#section_3,#community,#contact {
   margin-bottom: 60px;
 }
 
@@ -578,19 +578,19 @@ section#section_2 {
   overflow: hidden;
 }
 
-section#open-source > ul > li {
+section#section_3 > ul > li {
   border-bottom-width: 1px;
   border-color: #d6d6d6;
   border-style: solid;
   padding: 30px 0 0;
 }
 
-#open-source div {
+#section_3 div {
   position: relative;
   height: 100%;
 }
 
-#open-source div > .open-source-project {
+#section_3 div > .list-item {
   position: relative;
   max-width: 600px;
   width: 100%;
@@ -598,11 +598,11 @@ section#open-source > ul > li {
   display: inline-block;
 }
 
-section#open-source .open-source-project > ul > li.inline-photo,#open-source .open-source-project li > img,#open-source div li > a {
+section#section_3 .list-item > ul > li.inline-photo,#section_3 .list-item li > img,#section_3 div li > a {
   width: 95px;
 }
 
-#open-source .open-source-project > ul {
+#section_3 .list-item > ul {
   position: absolute;
   left: 600px;
   top: 0;
@@ -610,18 +610,18 @@ section#open-source .open-source-project > ul > li.inline-photo,#open-source .op
   padding-bottom: 10px;
 }
 
-section#open-source .open-source-project > ul > li.inline-photo {
+section#section_3 .list-item > ul > li.inline-photo {
   display: inline-block;
   margin: 0 5px;
   padding: 0;
 }
 
-#open-source .open-source-project li > img {
+#section_3 .list-item li > img {
   background-color: gray;
   margin: 0 5px;
 }
 
-#open-source div li > a {
+#section_3 div li > a {
   position: relative;
   top: -97px;
   left: 5px;
@@ -631,7 +631,7 @@ section#open-source .open-source-project > ul > li.inline-photo {
   margin: 0;
 }
 
-#open-source div li > a > img {
+#section_3 div li > a > img {
   width: 39px;
   height: 39px;
   position: relative;
@@ -639,18 +639,18 @@ section#open-source .open-source-project > ul > li.inline-photo {
   top: 28px;
 }
 
-#open-source div li > a:hover {
+#section_3 div li > a:hover {
   opacity: 1;
 }
 
-#open-source .open-source-project > header {
+#section_3 .list-item > header {
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: -1.5px;
   font-weight: bold;
 }
 
-#open-source .open-source-project > p {
+#section_3 .list-item > p {
   max-width: 600px;
   width: 100%;
   font-size: 21px;
@@ -659,7 +659,7 @@ section#open-source .open-source-project > ul > li.inline-photo {
   margin-top: -15px;
 }
 
-#open-source section > header {
+#section_3 section > header {
   margin-bottom: 35px;
 }
 
@@ -800,7 +800,7 @@ section#contact > figure figcaption section > header {
   text-align: center;
 }
 
-.left,#open-source div > img {
+.left,#section_3 div > img {
   float: left;
 }
 
@@ -812,7 +812,7 @@ section#contact > figure figcaption section > header {
   position: relative;
 }
 
-section#open-source > ul,#community > ul {
+section#section_3 > ul,#community > ul {
   max-width: 1052px;
   width: 100%;
   margin: auto;
@@ -928,18 +928,18 @@ section#open-source > ul,#community > ul {
     border-bottom: solid 1px #d6d6d6;
   }
 
-  #open-source .open-source-project > ul {
+  #section_3 .list-item > ul {
     position: relative;
     top: 15px;
     left: 0;
   }
 
-  section#open-source > ul > li {
+  section#section_3 > ul > li {
     max-width: 720px;
     margin: auto;
   }
 
-  #open-source div {
+  #section_3 div {
     height: 100%;
     clear: both;
   }
@@ -1034,15 +1034,15 @@ section#open-source > ul,#community > ul {
 }
 
 @media(max-width: 760px) {
-  .open-source-project {
+  .list-item {
     padding-left: 10px;
   }
 
-  #open-source div > .open-source-project {
+  #section_3 div > .list-item {
     max-width: 400px;
   }
 
-  section#open-source > ul > li {
+  section#section_3 > ul > li {
     max-width: 550px;
     min-width: 550px;
     margin: auto;
