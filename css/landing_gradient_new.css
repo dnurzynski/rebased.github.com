@@ -311,14 +311,13 @@ footer {
   padding: 6rem 3rem;
 }
 
-footer h2 {
-  font-size: 9rem;
+footer div.alt-contact-wrapper, footer h2 {
   text-transform: uppercase;
-  width: 60%;
 }
 
-footer .alt-contact-wrapper {
-  text-transform: uppercase;
+footer h2 {
+  font-size: 9rem;
+  width: 60%;
 }
 
 footer div.alt-contact-wrapper {
