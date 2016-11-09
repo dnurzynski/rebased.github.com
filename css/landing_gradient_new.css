@@ -150,11 +150,12 @@ em {
 }
 
 #intro {
-  padding: 0rem 3rem;
+  padding: 0 3rem 12rem 3rem;
 }
 
 #intro h1, #intro h2 {
   line-height: 1;
+  margin: 10rem 0;
 }
 
 #intro h2 {
@@ -168,13 +169,14 @@ em {
 }
 
 #intro p {
-  font-size: 6rem;
+  font-size: 7rem;
   line-height: 1.5;
+  margin: 0;
 }
 
 #reasons {
   background-color: #DED1F4;
-  font-size: 3rem;
+  font-size: inherit;
 }
 
 #reasons ul {
