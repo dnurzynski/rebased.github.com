@@ -114,12 +114,12 @@ em {
   width: 45%;
 }
 
-#header-section aside h2::after, #header-section aside .alt-contact-wrapper p::after {
+#header-section aside h2::after, #header-section aside .alt-contact-wrapper::after {
   border-bottom: 3px solid #fff;
   content: "";
   display: block;
-  padding-bottom: 5rem;
-  width: 25%;
+  padding-bottom: 10rem;
+  width: 10rem;
 }
 
 #header-section aside input, #header-section aside button {
@@ -139,7 +139,9 @@ em {
 }
 
 #header-section aside div.alt-contact-wrapper p {
-  width: 60%;
+  width: 55%;
+  float: right;
+  margin: auto;
 }
 
 #header-section aside p.disclaimer {
