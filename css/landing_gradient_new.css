@@ -55,6 +55,11 @@ ul {
   list-style: none;
 }
 
+em {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
 .after-submit-info {
   display: none;
 }
