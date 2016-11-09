@@ -1,19 +1,25 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  src: local("Roboto Regular"), local("Roboto-Regular"), url(../fonts/roboto_regular.woff) format("woff");
+  src: url(../fonts/roboto_regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "Roboto Thin";
-  font-style: normal;
-  src: local("Roboto-Thin"), url(../fonts/roboto_thin.woff) format("woff");
+  font-weight: 200;
+  src: url(../fonts/roboto_thin.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  src: local('Montserrat-Regular'), url(../fonts/montserrat.woff) format('woff');
+  font-family: "Montserrat";
+  font-weight: normal;
+  src: url(../fonts/montserrat_regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  font-weight: bold;
+  src: url(../fonts/montserrat_bold.ttf);
 }
 
 html {
@@ -38,7 +44,7 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat Bold";
 }
 
 p {
