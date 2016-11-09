@@ -195,11 +195,32 @@ em {
 
 #core-technologies {
   text-align: center;
+  margin: 0;
+}
+
+#core-technologies img {
+  padding: 8rem;
+  width: 75%;
 }
 
 #tools {
   background-color: #EEE4FF;
   text-align: center;
+}
+
+#tools ul {
+  columns: 2;
+  -moz-columns: 2;
+  padding: 8rem 4rem;
+}
+
+#tools li {
+  margin: 0 -4rem;
+}
+
+#tools img {
+  padding: 6rem 0rem;
+  width: 90%;
 }
 
 footer {
